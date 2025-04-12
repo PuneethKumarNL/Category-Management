@@ -10,13 +10,13 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://category-management-prkjad3qm-puneeth-kumar-nls-projects.vercel.app/"];
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow only this origin
+    origin: allowedOrigins, // Allow only this origin
     credentials: true, // If you need to send cookies
   })
 );
