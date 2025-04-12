@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ["https://category-management-prkjad3qm-puneeth-kumar-nls-projects.vercel.app/"];
+const allowedOrigins = ["https://category-management-1.onrender.com"];
 
 app.use(express.json());
 app.use(cookieParser());
