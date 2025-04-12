@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: allowedOrigins, // Allow only this origin
+    origin: "https://category-management-1.onrender.com", // Allow only this origin
     credentials: true, // If you need to send cookies
   })
 );
